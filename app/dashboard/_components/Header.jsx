@@ -1,4 +1,4 @@
-import ThemeToggle from '@/components/ThemeToggle'
+import ThemeToggle from '@/components/Themetoggle'
 import { UserButton } from '@clerk/nextjs'
 
 import Image from 'next/image'
