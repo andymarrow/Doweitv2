@@ -41,19 +41,29 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
         <ThemeToggle />
      
         {/* Export Button */}
-        <Button onClick={()=>onActionBtn('export')} variant="outline" className="flex items-center gap-2">
-          <Download size={18} />
-          Export
-        </Button>
+        {/* Show buttons only if not on /create-sites */}
+        {path !== "/create-sites" && (
+          <>
+            {/* Export Button */}
+            <Button
+              onClick={() => onActionBtn("export")}
+              variant="outline"
+              className="flex items-center gap-2"
+            >
+              <Download size={18} />
+              Export
+            </Button>
 
-        {/* Deploy Button */}
-        <Button
-          onClick={()=>onActionBtn('deploy')}
-          className="flex items-center gap-2"
-        >
-          <Upload size={18} />
-          Deploy
-        </Button>
+            {/* Deploy Button */}
+            <Button
+              onClick={() => onActionBtn("deploy")}
+              className="flex items-center gap-2"
+            >
+              <Upload size={18} />
+              Deploy
+            </Button>
+          </>
+        )}
       </div>
     </div>
   );
