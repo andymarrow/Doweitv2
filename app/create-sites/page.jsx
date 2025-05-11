@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './_components/Hero';
-import Header from './_components/Header';
 
 function CreateSitesMainScreen() {
   return (

@@ -106,7 +106,7 @@ function CreateBiography() {
       console.log("finish")
 
       setLoading(false);
-            router.replace('/create-course/'+id)
+            router.replace('/create-course/'+id) //cause we dont want the user to get back we replacing the url
     }
   return (
     <div>
